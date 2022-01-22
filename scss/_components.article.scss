@@ -1,0 +1,52 @@
+.c-article {
+	padding: 3.75rem 0;
+	@include lg {
+		padding: 10.75rem 2rem;
+	}
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	&__img {
+		overflow: hidden;
+		height: auto;
+		display: none;
+		@include lg {
+			display: block;
+		}
+		img {
+			transition: all 0.3s ease-in-out;
+			filter: blur(0);
+			transform: scale(1);
+			&:hover {
+				transform: scale(1.05);
+			}
+		}
+	}
+	&__btn {
+		margin-top: auto;
+		border: 0;
+		background-color: $orange;
+		padding: 1rem 2rem;
+		text-transform: uppercase;
+		color: white;
+	}
+	&__body {
+		background-color: white;
+		padding: 0 3.75rem;
+		padding-top: 5.25rem;
+		z-index: 99;
+		width: 100%;
+		@include lg{
+			margin-left: -10rem;
+			width: 45%;
+		}
+	}
+	&__title {
+		font-size: 1.75rem;
+		color: black;
+		font-weight: 400;
+		margin-bottom: 3.75rem;
+	}
+}
+

@@ -1,0 +1,27 @@
+.c-news {
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	@include xl {
+		flex-direction: row;
+	}
+	width: 100vw;
+	padding: 0 1rem;
+	&__img {
+		width: 100%;
+		@include xl{
+			width: calc(100% / 3);
+		}
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		align-self: flex-start;
+		img {
+			max-width: 100%;
+			margin-bottom: 3rem;
+		}
+	}
+}

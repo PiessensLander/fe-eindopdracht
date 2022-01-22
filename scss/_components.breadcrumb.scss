@@ -1,0 +1,9 @@
+.c-breadcrumb {
+    color: white;
+    margin-top: 1rem;
+    font-weight: 200;
+    &__current{
+        color: $orange;
+        font-weight: 400;
+    }
+}

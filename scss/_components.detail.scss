@@ -1,0 +1,89 @@
+.c-detail{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    padding: 1rem;
+    @include xl {
+        justify-content: flex-end;
+        padding: 3.75rem;
+        flex-direction: row;
+    }
+    &__col{
+        width: 100%;
+        @include xl{
+            width: calc(100%/3);
+        }
+    }
+    &__img{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+        @include xl{
+            margin: 0;
+        }
+        img{
+            width: 100%;
+            @include lg {
+                width: auto;
+            }
+        }
+    }
+    &__info {
+        padding: 1rem;
+        @include md{
+            padding: 3.75rem;
+        }
+    }
+    &__brand{
+        color: $orange;
+        text-transform: uppercase;
+        @include lg {
+            letter-spacing: 1.5rem;
+        }
+        font-size: 2rem;
+    }
+    &__type{
+        text-transform: uppercase;
+        font-weight: 200;
+        margin-bottom: 2rem;
+    }
+    &__description{
+        font-weight: 200;
+        margin-bottom: 5rem;
+    }
+    &__price{
+        background-color: white;
+		padding: 1.5rem 2rem;
+        color: black;
+    }
+    
+}
+
+.c-stock{
+    font-weight: 200;
+    &__amount{
+        color: $orange;
+    }
+}
+
+.c-atc{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    @include lg{
+        flex-direction: row;
+    }
+    &__btn {
+        border: 0;
+        color: white;
+		padding: 1.5rem 2rem;
+        background-color: $orange;
+        text-transform: uppercase;
+        &:disabled{
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+    }
+}

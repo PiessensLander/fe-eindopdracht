@@ -1,0 +1,51 @@
+.c-categories {
+	margin-bottom: 15.625rem;
+	display: flex;
+	flex-direction: column;
+	@include lg {
+		flex-direction: row;
+	}
+	width: 100%;
+}
+
+.c-category {
+	background-color: white;
+	padding: 3rem;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	@include lg {
+		flex-direction: column;
+		width: calc(100%/3);
+	}
+	justify-content: space-between;
+	&:nth-child(2) {
+		border-color: black;
+		border-style: solid;
+		border-width: 1px 0px 1px 0px;
+		@include lg {
+			border-width: 0px 1px 0px 1px;
+		}
+	}
+	&__name {
+		color: $orange;
+		font-size: 1rem;
+		text-transform: uppercase;
+		letter-spacing: 0.5rem;
+		font-weight: 300;
+        margin-bottom: 1rem;
+	}
+	&__img {
+		height: 50%;
+		@include xxl {
+			height: 100%;
+		}
+		width: auto;
+		align-self: center;
+		margin-bottom: 5.625rem;
+	}
+	&__description {
+		font-size: 1.625rem;
+		margin: 0;
+	}
+}

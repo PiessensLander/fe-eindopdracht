@@ -1,0 +1,59 @@
+.c-products {
+	margin-bottom: 15.625rem;
+	display: flex;
+	flex-direction: column;
+	gap: 5rem;
+	@include lg {
+		flex-direction: row;
+		gap: 0;
+	}
+	width: 100%;
+}
+
+.c-product {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	@include lg {
+		width: calc(100% / 3);
+	}
+	text-decoration: none;
+	color: white;
+	padding: 0 2rem;
+	color: white;
+	transition: all .3s;
+	&__img {
+		width: 80%;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 2rem;
+		@include lg {
+			margin-bottom: 3rem;
+		}
+		img {
+			width: 100%;
+			object-fit: cover;
+			align-self: center;
+			transition: all .3s;
+		}
+		@include lg {
+			width: 100%;
+		}
+	}
+	&__price {
+		color: $orange;
+		text-align: center;
+	}
+	&__divider {
+		padding: 0 1rem;
+	}
+	&:hover{
+		color: $orange;
+		img{
+			transition: all .3s;
+			transform: scale(1.05);
+		}
+	}
+}

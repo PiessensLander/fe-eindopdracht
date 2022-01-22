@@ -1,0 +1,12 @@
+.c-img{
+    &__detail{
+        text-align: center;
+        color: white;
+    }
+    &__brand{
+        color: $orange;
+    }
+    &__divider{
+        padding: 0 1rem;
+    }
+}

@@ -1,0 +1,8 @@
+.c-logo {
+    margin: 1rem;
+    z-index: 999;
+    @include md {
+        margin-left: 3.75rem;
+        margin-top: 3.75rem;
+    }
+}
